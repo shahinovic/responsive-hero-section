@@ -1,0 +1,124 @@
+body > .container > .row {
+  display: flex;
+}
+
+body > .container > .row > * {
+  /* height: 90vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 15vh;
+}
+
+.name {
+  /* border: 1px solid red; */
+  height: 30vh;
+  display: grid;
+  place-items: center;
+}
+
+.services .card {
+  border: none;
+}
+.card-title {
+  position: relative;
+
+  padding-left: 60px;
+}
+span.icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: #fff;
+
+  display: grid;
+  place-items: center;
+}
+.card-body {
+  padding: 10px !important;
+}
+.image .image_container {
+  max-width: 400px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cac6bb;
+}
+
+.hire_me {
+  padding-left: 50px;
+}
+
+.hire_me h2 {
+  font-size: 1.1em !important;
+}
+.hire_me p {
+  font-size: 0.9em !important;
+  margin-bottom: 10px !important;
+}
+.hire_me .btn {
+  border-radius: 0;
+  width: 50%;
+}
+.hire_me .experience {
+  display: flex;
+  gap: 10px;
+}
+
+.hire_me .experience .info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.hire_me .experience .info .nums {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+  .image {
+    order: 1;
+  }
+  .services {
+    order: 2;
+
+    text-align: center;
+  }
+  .card-title {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .hire_me {
+    order: 3;
+  }
+  .hire_me > * {
+    margin-bottom: 20px !important;
+  }
+  .hire_me h2 {
+    text-align: center;
+  }
+  .hire_me .btn {
+    margin: 0 auto;
+  }
+
+  .hire_me .experience {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body > .container > .row > * {
+    height: 90vh;
+  }
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .navbar .navbar-collapse:nth-of-type(2) {
+    display: flex;
+    justify-content: end;
+  }
+}
